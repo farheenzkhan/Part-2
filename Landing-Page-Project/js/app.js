@@ -108,11 +108,17 @@ function scrollToClick() {
     navbar.addEventListener('click', function (event) {
         const clicked = document.querySelector('#' + event.target.dataset.nav)
         clicked.scrollIntoView();
-        behavior:'smooth'
-    });
+});
+
+  navbar.addEventListener('click', function (event){
+      const clicked = document.querySelector('#' + event.target.dataset.nav)
+      clicked.highlights();
+
+  })
+
 };
 
-function 
+
 /**
  * End Main Functions
  * Begin Events
